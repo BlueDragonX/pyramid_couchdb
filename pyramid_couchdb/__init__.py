@@ -16,13 +16,14 @@ class Session:
     Store session information.
     """
 
+    uri_key = 'couchdb.uri'
+
     def __init__(self):
         """
         Initialize the object. Sets the value of self.uri_key to
         'couchdb.uri'.
         """
         self.configured = False
-        self.uri_key = 'couchdb.uri'
         self.uri = None
         self._server = None
 
