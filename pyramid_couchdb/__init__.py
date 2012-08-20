@@ -10,6 +10,8 @@ from couchdbkit import Server
 from pyramid.events import NewRequest
 
 
+__all__ = ['Session', 'session', 'configure']
+
 class Session:
 
     """
