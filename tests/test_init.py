@@ -12,7 +12,7 @@ from pyramid.testing import DummyRequest
 from couchdbkit import Server
 
 
-class DummyConfig:
+class DummyConfig(object):
 
     """
     Dummy Pyramid config class.
@@ -38,7 +38,7 @@ class DummyConfig:
         return subs.len() > 0
 
 
-class DummyRegistry:
+class DummyRegistry(object):
 
     """
     Dummy Pyramid registry class.
@@ -49,7 +49,7 @@ class DummyRegistry:
         self.settings = settings
 
 
-class DummyEvent:
+class DummyEvent(object):
 
     """
     Dummy Pyramid event class.
